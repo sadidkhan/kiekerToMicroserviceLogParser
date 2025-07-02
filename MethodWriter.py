@@ -2,10 +2,10 @@ class MethodWriter:
     def __init__(self, output_path):
         self.output_path = output_path
 
-    def write_methods(self, node_class_mapping, method_names):
+    def write_methods(self, node_class_mapping, method_names, featurename):
         with open(self.output_path, "a", encoding="utf-8") as file:
             
-            file.write('<')
+            file.write(f'SF:{featurename}<')
             file.write(','.join(method_names) + ' ')
             file.write('>')
             
