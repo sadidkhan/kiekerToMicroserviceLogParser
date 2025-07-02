@@ -34,11 +34,3 @@ class ProjectProcessor:
 
         # Step 4: Close writer
         #writer.close_file()
-
-# Example usage (can be used in a main block or loop)
-projects = ["JpetStore", "Roller"]
-base_path = "./data"
-
-processors = [ProjectProcessor(project, base_path) for project in projects]
-for processor in processors:
-    processor.process()
