@@ -1,0 +1,829 @@
+﻿digraph G {
+ rankdir=LR;
+"depNode_0" [label="'Entry'",shape="none"]
+subgraph "cluster_component_1" {
+ label = "<<assembly component>>\n@1:org.apache.roller.weblogger.config.WebloggerConfig";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_6" [label="getProperty(..)\nmin: 1178ns, avg: 4848ns, max: 19506ns,\ntotal: 135748ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_163" [label="getBooleanProperty(..)\nmin: 6108ns, avg: 6108ns, max: 6108ns,\ntotal: 6108ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_164" [label="getBooleanProperty(..)\nmin: 3960ns, avg: 3960ns, max: 3960ns,\ntotal: 3960ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_2" {
+ label = "<<assembly component>>\n@2:org.apache.roller.weblogger.business.WebloggerFactory";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_7" [label="isBootstrapped()\nmin: 307ns, avg: 979ns, max: 4753ns,\ntotal: 31327ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_13" [label="getWeblogger()\nmin: 1152ns, avg: 5218ns, max: 76952ns,\ntotal: 532202ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_3" {
+ label = "<<assembly component>>\n@3:org.apache.roller.TestTagLoggingFilter$TestTagRecord";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_134" [label="serialize(..)\nmin: 4392ns, avg: 4392ns, max: 4392ns,\ntotal: 4392ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_4" {
+ label = "<<assembly component>>\n@4:org.apache.roller.weblogger.business.GuiceWebloggerProvider";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_14" [label="getWeblogger()\nmin: 160ns, avg: 433ns, max: 4717ns,\ntotal: 44117ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_5" {
+ label = "<<assembly component>>\n@5:org.apache.roller.weblogger.business.WebloggerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_15" [label="getWeblogManager()\nmin: 233ns, avg: 290ns, max: 370ns,\ntotal: 1739ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_23" [label="getPropertiesManager()\nmin: 179ns, avg: 288ns, max: 463ns,\ntotal: 3740ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_34" [label="getUserManager()\nmin: 124ns, avg: 247ns, max: 507ns,\ntotal: 15072ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_121" [label="release()\nmin: 16419ns, avg: 361784ns, max: 4644775ns,\ntotal: 5788544ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_183" [label="getThemeManager()\nmin: 281ns, avg: 350ns, max: 522ns,\ntotal: 2101ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_6" {
+ label = "<<assembly component>>\n@6:org.apache.roller.weblogger.business.jpa.JPAWeblogManagerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_16" [label="getWeblogByHandle(..)\nmin: 1496058ns, avg: 3246676ns, max: 4997293ns,\ntotal: 6493351ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_17" [label="getWeblogByHandle(..)\nmin: 1486934ns, avg: 3235156ns, max: 4983377ns,\ntotal: 6470311ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_18" [label="isAlphanumeric(..)\nmin: 421ns, avg: 566ns, max: 710ns,\ntotal: 1131ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_100" [label="getWeblogs(..)\nmin: 3081547ns, avg: 3993885ns, max: 4906222ns,\ntotal: 7987769ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_105" [label="getWeblogCount()\nmin: 1386238ns, avg: 1649838ns, max: 1913437ns,\ntotal: 3299675ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_131" [label="release()\nmin: 133ns, avg: 303ns, max: 1907ns,\ntotal: 4841ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_7" {
+ label = "<<assembly component>>\n@7:org.apache.roller.weblogger.business.jpa.JPAPersistenceStrategy";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_19" [label="getNamedQuery(..)\nmin: 38304ns, avg: 46088ns, max: 65016ns,\ntotal: 322616ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_20" [label="getEntityManager(..)\nmin: 1237ns, avg: 6696ns, max: 173316ns,\ntotal: 636137ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_21" [label="getThreadLocalEntityManager()\nmin: 313ns, avg: 3386ns, max: 21172ns,\ntotal: 321662ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_25" [label="load(..)\nmin: 16557ns, avg: 384419ns, max: 6239878ns,\ntotal: 26909340ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_101" [label="getDynamicQuery(..)\nmin: 27932ns, avg: 28852ns, max: 29771ns,\ntotal: 57703ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_132" [label="release()\nmin: 27157ns, avg: 107903ns, max: 641306ns,\ntotal: 1726449ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_133" [label="isTransactionActive(..)\nmin: 2468ns, avg: 3611ns, max: 5209ns,\ntotal: 57778ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_8" {
+ label = "<<assembly component>>\n@8:org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_11" [label="handleRequest(..)\nmin: 5448ns, avg: 416437ns, max: 5024438ns,\ntotal: 6662989ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_12" [label="isWeblog(..)\nmin: 1508811ns, avg: 3259784ns, max: 5010756ns,\ntotal: 6519567ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_9" {
+ label = "<<assembly component>>\n@9:org.apache.roller.weblogger.pojos.RuntimeConfigProperty";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_26" [label="<init>()\nmin: 162ns, avg: 508ns, max: 1389ns,\ntotal: 10153ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_27" [label="getName()\nmin: 184ns, avg: 391ns, max: 636ns,\ntotal: 7822ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_28" [label="setName(..)\nmin: 155ns, avg: 343ns, max: 821ns,\ntotal: 6851ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_29" [label="getValue()\nmin: 169ns, avg: 307ns, max: 879ns,\ntotal: 10127ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_30" [label="setValue(..)\nmin: 142ns, avg: 445ns, max: 2819ns,\ntotal: 8903ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_10" {
+ label = "<<assembly component>>\n@10:org.apache.roller.weblogger.business.jpa.JPAPropertiesManagerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_24" [label="getProperty(..)\nmin: 37551ns, avg: 302379ns, max: 1142244ns,\ntotal: 3930927ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_11" {
+ label = "<<assembly component>>\n@11:org.apache.roller.weblogger.config.WebloggerRuntimeConfig";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_22" [label="getProperty(..)\nmin: 46442ns, avg: 321482ns, max: 1170264ns,\ntotal: 4179262ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_162" [label="getBooleanProperty(..)\nmin: 250999ns, avg: 250999ns, max: 250999ns,\ntotal: 250999ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_173" [label="getAbsoluteContextURL()\nmin: 334739ns, avg: 334739ns, max: 334739ns,\ntotal: 334739ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_189" [label="getRelativeContextURL()\nmin: 628ns, avg: 1123ns, max: 1617ns,\ntotal: 2245ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_12" {
+ label = "<<assembly component>>\n@12:org.apache.roller.util.UUIDGenerator";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_39" [label="generateUUID()\nmin: 3944ns, avg: 30491ns, max: 75180ns,\ntotal: 670791ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_13" {
+ label = "<<assembly component>>\n@13:org.apache.roller.weblogger.pojos.User";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_38" [label="<init>()\nmin: 17152ns, avg: 39545ns, max: 82343ns,\ntotal: 711808ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_40" [label="getActivationCode()\nmin: 259ns, avg: 500ns, max: 1187ns,\ntotal: 8993ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_41" [label="setActivationCode(..)\nmin: 1014ns, avg: 2726ns, max: 4571ns,\ntotal: 49068ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_43" [label="getDateCreated()\nmin: 1858ns, avg: 2851ns, max: 4433ns,\ntotal: 51324ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_44" [label="setDateCreated(..)\nmin: 773ns, avg: 1234ns, max: 2856ns,\ntotal: 22209ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_45" [label="getEmailAddress()\nmin: 211ns, avg: 304ns, max: 658ns,\ntotal: 5768ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_46" [label="setEmailAddress(..)\nmin: 30540ns, avg: 69414ns, max: 178781ns,\ntotal: 1249448ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_58" [label="getEnabled()\nmin: 178ns, avg: 388ns, max: 1220ns,\ntotal: 29099ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_59" [label="setEnabled(..)\nmin: 230ns, avg: 354ns, max: 628ns,\ntotal: 6380ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_60" [label="getFullName()\nmin: 156ns, avg: 309ns, max: 967ns,\ntotal: 5564ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_61" [label="setFullName(..)\nmin: 23641ns, avg: 44862ns, max: 104268ns,\ntotal: 807513ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_62" [label="getId()\nmin: 196ns, avg: 312ns, max: 893ns,\ntotal: 8413ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_63" [label="setId(..)\nmin: 237ns, avg: 319ns, max: 583ns,\ntotal: 5735ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_64" [label="getLocale()\nmin: 155ns, avg: 284ns, max: 801ns,\ntotal: 5394ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_65" [label="setLocale(..)\nmin: 169ns, avg: 285ns, max: 672ns,\ntotal: 5137ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_66" [label="getOpenIdUrl()\nmin: 178ns, avg: 289ns, max: 612ns,\ntotal: 5193ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_67" [label="setOpenIdUrl(..)\nmin: 807ns, avg: 1883ns, max: 8613ns,\ntotal: 33895ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_68" [label="getPassword()\nmin: 153ns, avg: 280ns, max: 592ns,\ntotal: 5040ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_69" [label="setPassword(..)\nmin: 160ns, avg: 273ns, max: 669ns,\ntotal: 4909ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_70" [label="getScreenName()\nmin: 158ns, avg: 268ns, max: 578ns,\ntotal: 4818ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_71" [label="setScreenName(..)\nmin: 21149ns, avg: 37925ns, max: 52561ns,\ntotal: 682641ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_72" [label="getTimeZone()\nmin: 188ns, avg: 316ns, max: 627ns,\ntotal: 5998ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_73" [label="setTimeZone(..)\nmin: 155ns, avg: 1022ns, max: 13118ns,\ntotal: 18387ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_74" [label="getUserName()\nmin: 164ns, avg: 313ns, max: 1122ns,\ntotal: 10030ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_75" [label="setUserName(..)\nmin: 22220ns, avg: 60589ns, max: 221081ns,\ntotal: 1090600ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_14" {
+ label = "<<assembly component>>\n@14:org.apache.roller.weblogger.util.HTMLSanitizer";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_42" [label="conditionallySanitize(..)\nmin: 198ns, avg: 34397ns, max: 219759ns,\ntotal: 3714889ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_47" [label="sanitize(..)\nmin: 19381ns, avg: 50191ns, max: 218425ns,\ntotal: 3613740ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_48" [label="sanitizer(..)\nmin: 18812ns, avg: 49096ns, max: 212858ns,\ntotal: 3534937ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_49" [label="sanitizer(..)\nmin: 17479ns, avg: 47098ns, max: 211049ns,\ntotal: 3391083ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_51" [label="tokenize(..)\nmin: 1361ns, avg: 5439ns, max: 53991ns,\ntotal: 391591ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_52" [label="htmlEncodeApexesAndTags(..)\nmin: 4302ns, avg: 11881ns, max: 183121ns,\ntotal: 1710879ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_53" [label="htmlEncodeApexes(..)\nmin: 1641ns, avg: 4465ns, max: 37155ns,\ntotal: 642975ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_54" [label="replaceAllNoRegex(..)\nmin: 986ns, avg: 3293ns, max: 136290ns,\ntotal: 1185654ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_55" [label="replaceAllNoRegex(..)\nmin: 148ns, avg: 699ns, max: 132829ns,\ntotal: 553414ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_56" [label="htmlEncodeTag(..)\nmin: 1650ns, avg: 5285ns, max: 176720ns,\ntotal: 761060ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_57" [label="removeLineFeed(..)\nmin: 2088ns, avg: 7074ns, max: 102763ns,\ntotal: 509309ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_15" {
+ label = "<<assembly component>>\n@15:org.apache.roller.weblogger.util.HTMLSanitizer$SanitizeResult";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_50" [label="<init>()\nmin: 247ns, avg: 682ns, max: 9959ns,\ntotal: 49124ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_16" {
+ label = "<<assembly component>>\n@16:org.apache.roller.weblogger.business.jpa.JPAUserManagerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_35" [label="getUserByUserName(..)\nmin: 22285ns, avg: 418396ns, max: 6257576ns,\ntotal: 23848596ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_36" [label="getUserByUserName(..)\nmin: 21247ns, avg: 416462ns, max: 6254902ns,\ntotal: 23738336ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_37" [label="getUser(..)\nmin: 17942ns, avg: 409701ns, max: 6244128ns,\ntotal: 23352935ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_103" [label="getUserCount()\nmin: 1979127ns, avg: 4664522ns, max: 7349917ns,\ntotal: 9329044ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_130" [label="release()\nmin: 129ns, avg: 204ns, max: 593ns,\ntotal: 3260ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_145" [label="checkPermission(..)\nmin: 2110967ns, avg: 2110967ns, max: 2110967ns,\ntotal: 2110967ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_147" [label="getRoles(..)\nmin: 1804489ns, avg: 1804489ns, max: 1804489ns,\ntotal: 1804489ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_17" {
+ label = "<<assembly component>>\n@17:org.apache.roller.weblogger.ui.core.RollerSession";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_32" [label="getRollerSession(..)\nmin: 200129ns, avg: 1996330ns, max: 6431928ns,\ntotal: 23955960ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_33" [label="getAuthenticatedUser()\nmin: 26153ns, avg: 428592ns, max: 6269512ns,\ntotal: 24429738ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_18" {
+ label = "<<assembly component>>\n@18:org.apache.roller.weblogger.ui.core.RollerLoginSessionManager$SingletonHolder";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_77" [label="access$0()\nmin: 238ns, avg: 346ns, max: 495ns,\ntotal: 4149ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_19" {
+ label = "<<assembly component>>\n@19:org.apache.roller.weblogger.ui.core.RollerLoginSessionManager";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_76" [label="getInstance()\nmin: 1855ns, avg: 2379ns, max: 3190ns,\ntotal: 28549ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_78" [label="get(..)\nmin: 9718ns, avg: 14174ns, max: 36948ns,\ntotal: 170085ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_20" {
+ label = "<<assembly component>>\n@20:org.apache.roller.weblogger.util.cache.LRUCacheImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_80" [label="get(..)\nmin: 1660ns, avg: 2274ns, max: 3823ns,\ntotal: 27288ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_87" [label="put(..)\nmin: 3511ns, avg: 4354ns, max: 5156ns,\ntotal: 39185ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_21" {
+ label = "<<assembly component>>\n@21:org.apache.roller.weblogger.util.cache.ExpiringCacheEntry";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_81" [label="getValue()\nmin: 1815ns, avg: 3197ns, max: 8220ns,\ntotal: 38366ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_82" [label="hasExpired()\nmin: 732ns, avg: 1231ns, max: 1786ns,\ntotal: 14772ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_85" [label="<init>(..)\nmin: 321ns, avg: 811ns, max: 1611ns,\ntotal: 14604ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_22" {
+ label = "<<assembly component>>\n@22:org.apache.roller.weblogger.util.cache.ExpiringLRUCacheImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_79" [label="get(..)\nmin: 7340ns, avg: 11257ns, max: 34038ns,\ntotal: 135085ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_86" [label="put(..)\nmin: 6276ns, avg: 7481ns, max: 8990ns,\ntotal: 67327ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_23" {
+ label = "<<assembly component>>\n@23:org.apache.roller.weblogger.ui.rendering.util.cache.SaltCache";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_83" [label="getInstance()\nmin: 220ns, avg: 329ns, max: 450ns,\ntotal: 2963ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_84" [label="put(..)\nmin: 13620ns, avg: 16306ns, max: 20212ns,\ntotal: 146753ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_24" {
+ label = "<<assembly component>>\n@24:org.apache.roller.weblogger.util.cache.LRUCacheImpl$LRULinkedHashMap";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_88" [label="removeEldestEntry(..)\nmin: 489ns, avg: 649ns, max: 871ns,\ntotal: 5841ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_25" {
+ label = "<<assembly component>>\n@25:org.apache.roller.weblogger.ui.struts2.util.UIAction";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_89" [label="<init>()\nmin: 1380ns, avg: 1782ns, max: 2223ns,\ntotal: 5346ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_91" [label="setRequest(..)\nmin: 3330ns, avg: 4032ns, max: 4500ns,\ntotal: 12096ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_93" [label="setAuthenticatedUser(..)\nmin: 343ns, avg: 384ns, max: 433ns,\ntotal: 1152ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_94" [label="getWeblog()\nmin: 206ns, avg: 228ns, max: 258ns,\ntotal: 683ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_98" [label="myPrepare()\nmin: 168ns, avg: 274ns, max: 410ns,\ntotal: 822ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_107" [label="getProp(..)\nmin: 57649ns, avg: 402029ns, max: 1214325ns,\ntotal: 3618265ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_108" [label="getPageTitle()\nmin: 53068ns, avg: 2260422ns, max: 12409688ns,\ntotal: 13562530ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_109" [label="getText(..)\nmin: 51459ns, avg: 818682ns, max: 12397901ns,\ntotal: 18011009ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_110" [label="cleanTextKey(..)\nmin: 9575ns, avg: 92846ns, max: 1116429ns,\ntotal: 2042603ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_111" [label="cleanExpressions(..)\nmin: 637ns, avg: 1255ns, max: 2905ns,\ntotal: 27608ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_112" [label="getActionWeblog()\nmin: 185ns, avg: 481ns, max: 1091ns,\ntotal: 4325ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_113" [label="getMenu()\nmin: 10822ns, avg: 14866ns, max: 17371ns,\ntotal: 44598ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_114" [label="getDesiredMenu()\nmin: 353ns, avg: 436ns, max: 590ns,\ntotal: 1307ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_115" [label="getActionName()\nmin: 241ns, avg: 277ns, max: 348ns,\ntotal: 831ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_116" [label="getAuthenticatedUser()\nmin: 194ns, avg: 467ns, max: 1269ns,\ntotal: 3737ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_138" [label="isUserRequired()\nmin: 724ns, avg: 724ns, max: 724ns,\ntotal: 724ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_139" [label="requiredGlobalPermissionActions()\nmin: 672ns, avg: 28242ns, max: 81665ns,\ntotal: 84726ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_169" [label="getSalt()\nmin: 1976ns, avg: 1976ns, max: 1976ns,\ntotal: 1976ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_172" [label="getAbsoluteSiteURL()\nmin: 342912ns, avg: 342912ns, max: 342912ns,\ntotal: 342912ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_176" [label="getLocalesList()\nmin: 5610ns, avg: 5610ns, max: 5610ns,\ntotal: 5610ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_179" [label="getTimeZonesList()\nmin: 24952ns, avg: 24952ns, max: 24952ns,\ntotal: 24952ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_188" [label="getSiteURL()\nmin: 89609ns, avg: 115463ns, max: 141316ns,\ntotal: 230925ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_26" {
+ label = "<<assembly component>>\n@26:org.apache.roller.weblogger.ui.struts2.core.Setup";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_90" [label="<init>()\nmin: 849ns, avg: 862ns, max: 875ns,\ntotal: 1724ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_96" [label="isUserRequired()\nmin: 314ns, avg: 382ns, max: 450ns,\ntotal: 764ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_99" [label="execute()\nmin: 6498767ns, avg: 10481584ns, max: 14464400ns,\ntotal: 20963167ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_102" [label="setWeblogs(..)\nmin: 863ns, avg: 2991ns, max: 5119ns,\ntotal: 5982ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_104" [label="setUserCount(..)\nmin: 735ns, avg: 778ns, max: 821ns,\ntotal: 1556ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_106" [label="setBlogCount(..)\nmin: 851ns, avg: 1067ns, max: 1283ns,\ntotal: 2134ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_118" [label="getUserCount()\nmin: 592ns, avg: 1168ns, max: 2223ns,\ntotal: 9344ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_119" [label="getBlogCount()\nmin: 402ns, avg: 990ns, max: 2083ns,\ntotal: 5942ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_27" {
+ label = "<<assembly component>>\n@27:org.apache.roller.weblogger.ui.core.util.menu.MenuHelper";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_117" [label="getMenu(..)\nmin: 314ns, avg: 391ns, max: 469ns,\ntotal: 1172ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_28" {
+ label = "<<assembly component>>\n@28:org.apache.roller.weblogger.ui.core.filters.SpringFirewallExceptionFilter";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_4" [label="doFilter(..)\nmin: 932848ns, avg: 79254578ns, max: 721294843ns,\ntotal: 1822855297ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_29" {
+ label = "<<assembly component>>\n@29:org.apache.roller.weblogger.ui.core.filters.CharEncodingFilter";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_3" [label="doFilter(..)\nmin: 941756ns, avg: 79292354ns, max: 721557977ns,\ntotal: 1823724144ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_30" {
+ label = "<<assembly component>>\n@30:org.apache.roller.weblogger.ui.struts2.util.UIActionPrepareInterceptor";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_97" [label="doIntercept(..)\nmin: 32827847ns, avg: 249991350ns, max: 681893437ns,\ntotal: 749974051ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_31" {
+ label = "<<assembly component>>\n@31:org.apache.roller.weblogger.ui.struts2.util.UISecurityInterceptor";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_95" [label="doIntercept(..)\nmin: 34331685ns, avg: 251786600ns, max: 685755107ns,\ntotal: 755359801ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_32" {
+ label = "<<assembly component>>\n@32:org.apache.roller.weblogger.ui.struts2.util.UIActionInterceptor";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_92" [label="doIntercept(..)\nmin: 34585753ns, avg: 252103117ns, max: 686153305ns,\ntotal: 756309352ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_33" {
+ label = "<<assembly component>>\n@33:org.apache.roller.weblogger.ui.core.filters.LoadSaltFilter";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_31" [label="doFilter(..)\nmin: 2908149ns, avg: 91692587ns, max: 717333820ns,\ntotal: 825233282ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_34" {
+ label = "<<assembly component>>\n@34:org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_10" [label="doFilter(..)\nmin: 358278ns, avg: 56041587ns, max: 715546088ns,\ntotal: 896665399ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_35" {
+ label = "<<assembly component>>\n@35:org.apache.roller.weblogger.ui.core.filters.InitFilter";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_9" [label="doFilter(..)\nmin: 409812ns, avg: 57488077ns, max: 717367083ns,\ntotal: 919809231ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_36" {
+ label = "<<assembly component>>\n@36:org.apache.roller.weblogger.business.jpa.JPAAutoPingManagerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_122" [label="release()\nmin: 176ns, avg: 233ns, max: 311ns,\ntotal: 3723ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_37" {
+ label = "<<assembly component>>\n@37:org.apache.roller.weblogger.business.jpa.JPABookmarkManagerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_123" [label="release()\nmin: 137ns, avg: 343ns, max: 2325ns,\ntotal: 5488ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_38" {
+ label = "<<assembly component>>\n@38:org.apache.roller.weblogger.business.jpa.JPAMediaFileManagerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_124" [label="release()\nmin: 121ns, avg: 265ns, max: 1432ns,\ntotal: 4232ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_39" {
+ label = "<<assembly component>>\n@39:org.apache.roller.weblogger.business.FileContentManagerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_125" [label="release()\nmin: 186ns, avg: 402ns, max: 2189ns,\ntotal: 6435ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_40" {
+ label = "<<assembly component>>\n@40:org.apache.roller.weblogger.business.jpa.JPAPingTargetManagerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_126" [label="release()\nmin: 147ns, avg: 212ns, max: 336ns,\ntotal: 3387ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_41" {
+ label = "<<assembly component>>\n@41:org.apache.roller.weblogger.business.jpa.JPAPingQueueManagerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_127" [label="release()\nmin: 133ns, avg: 329ns, max: 2150ns,\ntotal: 5264ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_42" {
+ label = "<<assembly component>>\n@42:org.apache.roller.weblogger.business.plugins.PluginManagerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_128" [label="release()\nmin: 150ns, avg: 228ns, max: 395ns,\ntotal: 3650ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_43" {
+ label = "<<assembly component>>\n@43:org.apache.roller.weblogger.business.runnable.ThreadManagerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_129" [label="release()\nmin: 153ns, avg: 194ns, max: 282ns,\ntotal: 3101ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_44" {
+ label = "<<assembly component>>\n@44:org.apache.roller.weblogger.business.jpa.JPAWebloggerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_120" [label="release()\nmin: 50074ns, avg: 477580ns, max: 4707138ns,\ntotal: 7641287ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_45" {
+ label = "<<assembly component>>\n@45:org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_8" [label="doFilter(..)\nmin: 594678ns, avg: 58007531ns, max: 718193183ns,\ntotal: 928120490ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_46" {
+ label = "<<assembly component>>\n@46:org.apache.roller.weblogger.ui.core.filters.BootstrapFilter";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_5" [label="doFilter(..)\nmin: 608668ns, avg: 58096341ns, max: 718259895ns,\ntotal: 929541448ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_47" {
+ label = "<<assembly component>>\n@47:kieker.monitoring.probe.servlet.SessionAndTraceRegistrationFilter";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_2" [label="doFilter(..)\nmin: 946129ns, avg: 59148824ns, max: 721682935ns,\ntotal: 946381188ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_48" {
+ label = "<<assembly component>>\n@48:org.apache.roller.TestTagLoggingFilter";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_1" [label="doFilter(..)\nmin: 987121ns, avg: 59450427ns, max: 721933694ns,\ntotal: 951206829ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_49" {
+ label = "<<assembly component>>\n@49:org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_135" [label="doFilter(..)\nmin: 495536ns, avg: 103359864ns, max: 715632969ns,\ntotal: 723519049ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_50" {
+ label = "<<assembly component>>\n@50:org.apache.roller.weblogger.ui.struts2.core.CreateWeblogBean";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_137" [label="<init>()\nmin: 3842ns, avg: 3842ns, max: 3842ns,\ntotal: 3842ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_166" [label="setLocale(..)\nmin: 1426ns, avg: 1426ns, max: 1426ns,\ntotal: 1426ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_167" [label="setTimeZone(..)\nmin: 23396ns, avg: 23396ns, max: 23396ns,\ntotal: 23396ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_168" [label="setEmailAddress(..)\nmin: 989ns, avg: 989ns, max: 989ns,\ntotal: 989ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_170" [label="getName()\nmin: 1793ns, avg: 1793ns, max: 1793ns,\ntotal: 1793ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_171" [label="getHandle()\nmin: 490ns, avg: 1256ns, max: 2022ns,\ntotal: 2512ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_174" [label="getEmailAddress()\nmin: 806ns, avg: 806ns, max: 806ns,\ntotal: 806ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_175" [label="getLocale()\nmin: 534ns, avg: 534ns, max: 534ns,\ntotal: 534ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_178" [label="getTimeZone()\nmin: 833ns, avg: 833ns, max: 833ns,\ntotal: 833ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_181" [label="getTheme()\nmin: 1213ns, avg: 1951ns, max: 2689ns,\ntotal: 3902ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_51" {
+ label = "<<assembly component>>\n@51:org.apache.roller.weblogger.ui.struts2.core.CreateWeblog";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_136" [label="<init>()\nmin: 698353ns, avg: 698353ns, max: 698353ns,\ntotal: 698353ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_160" [label="isWeblogRequired()\nmin: 315ns, avg: 315ns, max: 315ns,\ntotal: 315ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_161" [label="execute()\nmin: 347011ns, avg: 347011ns, max: 347011ns,\ntotal: 347011ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_165" [label="getBean()\nmin: 185ns, avg: 906ns, max: 2230ns,\ntotal: 9966ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_182" [label="getThemes()\nmin: 264353ns, avg: 372935ns, max: 481517ns,\ntotal: 745870ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_52" {
+ label = "<<assembly component>>\n@52:org.apache.roller.weblogger.pojos.RollerPermission";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_140" [label="<init>(..)\nmin: 424ns, avg: 504ns, max: 583ns,\ntotal: 1007ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_142" [label="setActionsAsList(..)\nmin: 4017ns, avg: 44266ns, max: 84515ns,\ntotal: 88532ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_157" [label="getActionsAsList()\nmin: 2790ns, avg: 4875ns, max: 6959ns,\ntotal: 9749ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_159" [label="hasAction(..)\nmin: 8037ns, avg: 8037ns, max: 8037ns,\ntotal: 8037ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_53" {
+ label = "<<assembly component>>\n@53:org.apache.roller.weblogger.util.Utilities";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_143" [label="stringListToString(..)\nmin: 1912ns, avg: 24982ns, max: 48052ns,\ntotal: 49964ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_155" [label="stringToStringList(..)\nmin: 1140ns, avg: 2298ns, max: 5502ns,\ntotal: 9193ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_54" {
+ label = "<<assembly component>>\n@54:org.apache.roller.weblogger.pojos.GlobalPermission";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_141" [label="<init>(..)\nmin: 93587ns, avg: 93587ns, max: 93587ns,\ntotal: 93587ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_144" [label="setActions(..)\nmin: 227ns, avg: 1425ns, max: 2622ns,\ntotal: 2849ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_146" [label="<init>(..)\nmin: 1921852ns, avg: 1921852ns, max: 1921852ns,\ntotal: 1921852ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_156" [label="implies(..)\nmin: 27515ns, avg: 27515ns, max: 27515ns,\ntotal: 27515ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_158" [label="getActions()\nmin: 234ns, avg: 288ns, max: 342ns,\ntotal: 576ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_55" {
+ label = "<<assembly component>>\n@55:org.apache.roller.weblogger.pojos.UserRole";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_148" [label="<init>()\nmin: 5226ns, avg: 14390ns, max: 33479ns,\ntotal: 57561ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_149" [label="getId()\nmin: 178ns, avg: 252ns, max: 338ns,\ntotal: 1008ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_150" [label="setId(..)\nmin: 195ns, avg: 232ns, max: 257ns,\ntotal: 928ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_151" [label="getRole()\nmin: 144ns, avg: 185ns, max: 216ns,\ntotal: 1108ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_152" [label="setRole(..)\nmin: 212ns, avg: 238ns, max: 247ns,\ntotal: 952ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_153" [label="getUserName()\nmin: 182ns, avg: 202ns, max: 218ns,\ntotal: 806ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_154" [label="setUserName(..)\nmin: 177ns, avg: 191ns, max: 226ns,\ntotal: 765ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_56" {
+ label = "<<assembly component>>\n@56:org.apache.roller.weblogger.ui.struts2.util.UIUtils";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_177" [label="getLocales()\nmin: 288ns, avg: 288ns, max: 288ns,\ntotal: 288ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_180" [label="getTimeZones()\nmin: 607ns, avg: 607ns, max: 607ns,\ntotal: 607ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_57" {
+ label = "<<assembly component>>\n@57:org.apache.roller.weblogger.business.themes.SharedTheme";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_185" [label="compareTo(..)\nmin: 1532ns, avg: 22582ns, max: 123271ns,\ntotal: 406481ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_186" [label="getName()\nmin: 123ns, avg: 358ns, max: 2821ns,\ntotal: 17912ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_187" [label="getId()\nmin: 251ns, avg: 571ns, max: 2370ns,\ntotal: 13696ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_193" [label="getDescription()\nmin: 262ns, avg: 502ns, max: 1057ns,\ntotal: 2006ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_58" {
+ label = "<<assembly component>>\n@58:org.apache.roller.weblogger.business.themes.ThemeManagerImpl";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_184" [label="getEnabledThemesList()\nmin: 229441ns, avg: 309068ns, max: 388695ns,\ntotal: 618136ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_192" [label="getTheme(..)\nmin: 1361ns, avg: 6452ns, max: 20159ns,\ntotal: 25806ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_59" {
+ label = "<<assembly component>>\n@59:org.apache.roller.weblogger.ui.struts2.ajax.ThemeDataServlet";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_190" [label="<init>()\nmin: 3131ns, avg: 3131ns, max: 3131ns,\ntotal: 3131ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+"depNode_191" [label="doGet(..)\nmin: 489212ns, avg: 1441428ns, max: 2266657ns,\ntotal: 5765711ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_60" {
+ label = "<<assembly component>>\n@60:org.apache.roller.weblogger.business.themes.SharedThemeFromDir";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_194" [label="getPreviewImage()\nmin: 274ns, avg: 400ns, max: 669ns,\ntotal: 1600ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+subgraph "cluster_component_61" {
+ label = "<<assembly component>>\n@61:org.apache.roller.weblogger.business.themes.SharedThemeResourceFromDir";
+ shape = "box";
+ style = "filled";
+ fillcolor = "white";
+"depNode_195" [label="getPath()\nmin: 303ns, avg: 880ns, max: 2572ns,\ntotal: 3519ns",shape="oval",style="filled",color="#000000",fillcolor="white"]
+}
+depNode_0->depNode_1[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_0->depNode_2[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_0->depNode_134[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_0->depNode_190[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_2->depNode_3[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_3->depNode_4[label=23, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_3[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_5[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_22[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_31[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_165[label=8, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_169[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_170[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_107[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_171[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_108[label=6, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_172[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_109[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_174[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_175[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_112[label=6, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_176[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_113[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_178[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_179[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_116[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_181[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_118[label=8, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_182[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_119[label=6, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_186[label=10, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_187[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_4->depNode_188[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_5->depNode_6[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_5->depNode_7[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_5->depNode_8[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_8->depNode_7[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_8->depNode_120[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_8->depNode_9[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_8->depNode_13[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_9->depNode_10[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_9->depNode_31[label=7, style="solid", arrowhead="open", color="#000000"]
+depNode_10->depNode_3[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_10->depNode_136[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_10->depNode_89[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_10->depNode_11[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_10->depNode_91[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_10->depNode_92[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_10->depNode_191[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_11->depNode_12[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_12->depNode_16[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_12->depNode_13[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_12->depNode_15[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_13->depNode_14[label=102, style="solid", arrowhead="open", color="#000000"]
+depNode_16->depNode_17[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_17->depNode_18[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_17->depNode_19[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_19->depNode_20[label=7, style="solid", arrowhead="open", color="#000000"]
+depNode_20->depNode_21[label=95, style="solid", arrowhead="open", color="#000000"]
+depNode_22->depNode_23[label=13, style="solid", arrowhead="open", color="#000000"]
+depNode_22->depNode_24[label=13, style="solid", arrowhead="open", color="#000000"]
+depNode_22->depNode_13[label=13, style="solid", arrowhead="open", color="#000000"]
+depNode_22->depNode_29[label=13, style="solid", arrowhead="open", color="#000000"]
+depNode_24->depNode_25[label=13, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_64[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_65[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_66[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_67[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_68[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_69[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_70[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_71[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_72[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_73[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_74[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_75[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_20[label=70, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_26[label=20, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_27[label=20, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_28[label=20, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_29[label=20, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_30[label=20, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_38[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_40[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_41[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_43[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_44[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_45[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_46[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_58[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_59[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_60[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_61[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_62[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_25->depNode_63[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_31->depNode_32[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_31->depNode_33[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_31->depNode_83[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_31->depNode_84[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_31->depNode_135[label=7, style="solid", arrowhead="open", color="#000000"]
+depNode_31->depNode_89[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_31->depNode_90[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_31->depNode_91[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_31->depNode_92[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_31->depNode_62[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_32->depNode_33[label=36, style="solid", arrowhead="open", color="#000000"]
+depNode_32->depNode_74[label=12, style="solid", arrowhead="open", color="#000000"]
+depNode_32->depNode_76[label=12, style="solid", arrowhead="open", color="#000000"]
+depNode_32->depNode_78[label=12, style="solid", arrowhead="open", color="#000000"]
+depNode_33->depNode_34[label=57, style="solid", arrowhead="open", color="#000000"]
+depNode_33->depNode_35[label=57, style="solid", arrowhead="open", color="#000000"]
+depNode_33->depNode_13[label=57, style="solid", arrowhead="open", color="#000000"]
+depNode_35->depNode_36[label=57, style="solid", arrowhead="open", color="#000000"]
+depNode_36->depNode_37[label=57, style="solid", arrowhead="open", color="#000000"]
+depNode_36->depNode_58[label=57, style="solid", arrowhead="open", color="#000000"]
+depNode_37->depNode_25[label=57, style="solid", arrowhead="open", color="#000000"]
+depNode_38->depNode_39[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_41->depNode_42[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_42->depNode_47[label=72, style="solid", arrowhead="open", color="#000000"]
+depNode_46->depNode_42[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_47->depNode_48[label=72, style="solid", arrowhead="open", color="#000000"]
+depNode_48->depNode_49[label=72, style="solid", arrowhead="open", color="#000000"]
+depNode_49->depNode_50[label=72, style="solid", arrowhead="open", color="#000000"]
+depNode_49->depNode_51[label=72, style="solid", arrowhead="open", color="#000000"]
+depNode_49->depNode_52[label=144, style="solid", arrowhead="open", color="#000000"]
+depNode_49->depNode_57[label=72, style="solid", arrowhead="open", color="#000000"]
+depNode_52->depNode_53[label=144, style="solid", arrowhead="open", color="#000000"]
+depNode_52->depNode_56[label=144, style="solid", arrowhead="open", color="#000000"]
+depNode_53->depNode_54[label=144, style="solid", arrowhead="open", color="#000000"]
+depNode_54->depNode_55[label=792, style="solid", arrowhead="open", color="#000000"]
+depNode_56->depNode_54[label=144, style="solid", arrowhead="open", color="#000000"]
+depNode_57->depNode_54[label=72, style="solid", arrowhead="open", color="#000000"]
+depNode_61->depNode_42[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_67->depNode_42[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_71->depNode_42[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_75->depNode_42[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_76->depNode_77[label=12, style="solid", arrowhead="open", color="#000000"]
+depNode_78->depNode_79[label=12, style="solid", arrowhead="open", color="#000000"]
+depNode_79->depNode_80[label=12, style="solid", arrowhead="open", color="#000000"]
+depNode_79->depNode_81[label=12, style="solid", arrowhead="open", color="#000000"]
+depNode_81->depNode_82[label=12, style="solid", arrowhead="open", color="#000000"]
+depNode_84->depNode_85[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_84->depNode_86[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_86->depNode_85[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_86->depNode_87[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_87->depNode_88[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_92->depNode_32[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_92->depNode_33[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_92->depNode_93[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_92->depNode_94[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_92->depNode_95[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_95->depNode_96[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_95->depNode_160[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_95->depNode_97[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_95->depNode_145[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_95->depNode_34[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_95->depNode_116[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_95->depNode_138[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_95->depNode_139[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_95->depNode_140[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_95->depNode_13[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_95->depNode_141[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_97->depNode_161[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_97->depNode_98[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_97->depNode_99[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_97->depNode_3[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_99->depNode_34[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_99->depNode_100[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_99->depNode_102[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_99->depNode_103[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_99->depNode_104[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_99->depNode_105[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_99->depNode_106[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_99->depNode_13[label=6, style="solid", arrowhead="open", color="#000000"]
+depNode_99->depNode_15[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_100->depNode_101[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_101->depNode_20[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_103->depNode_19[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_105->depNode_19[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_107->depNode_6[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_107->depNode_22[label=9, style="solid", arrowhead="open", color="#000000"]
+depNode_108->depNode_109[label=6, style="solid", arrowhead="open", color="#000000"]
+depNode_109->depNode_110[label=22, style="solid", arrowhead="open", color="#000000"]
+depNode_110->depNode_111[label=22, style="solid", arrowhead="open", color="#000000"]
+depNode_113->depNode_112[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_113->depNode_114[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_113->depNode_115[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_113->depNode_116[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_113->depNode_117[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_120->depNode_132[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_120->depNode_121[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_121->depNode_128[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_121->depNode_129[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_121->depNode_130[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_121->depNode_131[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_121->depNode_122[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_121->depNode_123[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_121->depNode_124[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_121->depNode_125[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_121->depNode_126[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_121->depNode_127[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_132->depNode_20[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_132->depNode_133[label=16, style="solid", arrowhead="open", color="#000000"]
+depNode_135->depNode_10[label=7, style="solid", arrowhead="open", color="#000000"]
+depNode_136->depNode_137[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_141->depNode_142[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_142->depNode_144[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_142->depNode_143[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_145->depNode_146[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_145->depNode_74[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_145->depNode_140[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_145->depNode_156[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_146->depNode_34[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_146->depNode_147[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_146->depNode_6[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_146->depNode_155[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_146->depNode_13[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_146->depNode_142[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_147->depNode_19[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_147->depNode_148[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_147->depNode_149[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_147->depNode_150[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_147->depNode_151[label=6, style="solid", arrowhead="open", color="#000000"]
+depNode_147->depNode_152[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_147->depNode_153[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_147->depNode_74[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_147->depNode_154[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_148->depNode_39[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_156->depNode_157[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_156->depNode_159[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_157->depNode_155[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_157->depNode_158[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_159->depNode_157[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_161->depNode_64[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_161->depNode_162[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_161->depNode_163[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_161->depNode_116[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_161->depNode_165[label=3, style="solid", arrowhead="open", color="#000000"]
+depNode_161->depNode_166[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_161->depNode_167[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_161->depNode_72[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_161->depNode_168[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_161->depNode_45[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_162->depNode_22[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_163->depNode_164[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_164->depNode_6[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_172->depNode_173[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_173->depNode_22[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_176->depNode_177[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_179->depNode_180[label=1, style="solid", arrowhead="open", color="#000000"]
+depNode_182->depNode_183[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_182->depNode_184[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_182->depNode_13[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_184->depNode_185[label=18, style="solid", arrowhead="open", color="#000000"]
+depNode_185->depNode_186[label=36, style="solid", arrowhead="open", color="#000000"]
+depNode_188->depNode_189[label=2, style="solid", arrowhead="open", color="#000000"]
+depNode_191->depNode_192[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_191->depNode_193[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_191->depNode_194[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_191->depNode_195[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_191->depNode_183[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_191->depNode_186[label=4, style="solid", arrowhead="open", color="#000000"]
+depNode_191->depNode_187[label=8, style="solid", arrowhead="open", color="#000000"]
+depNode_191->depNode_13[label=4, style="solid", arrowhead="open", color="#000000"]
+}
