@@ -13,7 +13,7 @@ class MethodWriter:
                 class_name = info.get("class")
                 method_name = info.get("methodname")
                 depth = info.get("depth", 0)
-                size = info.get("total", 0)
+                size = info.get("size", 0)
                 thread = "main"
 
                 if class_name and method_name:
