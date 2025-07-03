@@ -1,6 +1,3 @@
-from DotGraphAnalyzer import DotGraphAnalyzer
-from MethodSizeReader import MethodSizeReader
-from MethodWriter import MethodWriter
 from ProjectProcessor import ProjectProcessor
 
 # reader = MethodSizeReader('./data/JpetStore/method_parameters_sizeOf.csv')
