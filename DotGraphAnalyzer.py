@@ -48,10 +48,13 @@ class DotGraphAnalyzer:
 
     def get_sizeof_method(self, node_info):
         method_name = node_info.get('methodname', '')
+        class_name = node_info.get('class', '')
+        
+        full_method_name = f"{class_name}.{method_name}"
         size = 0
-        if method_name in self.method_size_map:
-            size = self.method_size_map[method_name]
-            
+        if full_method_name in self.method_size_map:
+            size = self.method_size_map[full_method_name]
+
         node_info['size'] = size
         
         
