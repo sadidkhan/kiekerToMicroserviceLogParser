@@ -1,0 +1,73 @@
+# Kieker To Microservice Log Parser
+
+This project provides tools to process Kieker-generated DOT graph files and method size CSVs, extracting method and feature information for microservice analysis. It generates structured outputs for further analysis or documentation.
+
+## Features
+
+- **Reads Kieker DOT graph files** to extract method call dependencies.
+- **Parses method size CSV files** for additional metadata.
+- **Maps features to methods** and outputs them in a structured format.
+- **Removes or overwrites previous outputs** to ensure clean results.
+- **Extensible and modular**: Easily add new processing or output formats.
+
+## Project Structure
+
+```
+.
+├── DotGraphAnalyzer.py
+├── MethodSizeReader.py
+├── MethodWriter.py
+├── ProjectProcessor.py
+├── LogConverterFromGraph.py
+├── data/
+│   └── <project_name>/
+│       ├── assemblyOperationDependencyGraph_category.dot
+│       └── method_parameters_sizeOf.csv
+└── output/
+```
+
+## Usage
+
+1. **Prepare your data:**
+   - Place your Kieker DOT files and `method_parameters_sizeOf.csv` in a subdirectory under `data/<project_name>/`.
+
+2. **Configure your project:**
+   - Edit `LogConverterFromGraph.py` to set your project name(s) and base path.
+
+3. **Run the parser:**
+   ```bash
+   python LogConverterFromGraph.py
+   ```
+
+4. **Check the outputs:**
+   - `<project_name>_output_methods.txt`
+   - `<project_name>_output_general_functionality.txt`
+
+## Example Output
+
+- **Methods Output:**  
+  Lists methods with associated class and size information.
+
+- **General Functionality Output:**  
+  ```
+  SF:feature1<methodA,methodB>#feature2<methodC,methodD>
+  ```
+
+## Requirements
+
+- Python 3.6+
+- No external dependencies (uses only the Python standard library)
+
+## Extending
+
+- Add new analyzers or writers by following the modular class structure.
+- Integrate with other log or trace analysis tools as needed.
+
+## License
+
+MIT License
+
+---
+
+**Contact:**  
+For questions or contributions, please open an issue or pull request on
