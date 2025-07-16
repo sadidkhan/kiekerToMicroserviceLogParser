@@ -11,7 +11,13 @@ class ProjectProcessor:
         self.dot_dir = os.path.join(base_dir, project_name)
         self.output_file = os.path.join(base_dir, f"{project_name}_output_methods.txt")
         self.output_file_general_func_list = os.path.join(base_dir, f"{project_name}_output_general_functionality.txt")
+        self.remove_existing_outputs()
 
+    def remove_existing_outputs(self):
+        for filepath in [self.output_file, self.output_file_general_func_list]:
+            if os.path.exists(filepath):
+                os.remove(filepath)
+                
     def process(self):
         # Step 1: Read size file
         reader = MethodSizeReader(self.size_file)
